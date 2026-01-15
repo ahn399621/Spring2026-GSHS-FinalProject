@@ -9,17 +9,20 @@ In this assignment, you will study how the Gradient Descent algorithm for linear
 
 You can use the provided starter code `gradient_descent_scalability.py` to run the experiments and generate the required plots that illustrate how the convergence behavior and runtime of Gradient Descent vary as the problem size increases.
 
-1. **Data Generation**
+1. **Data Generation**\
 The function `generate_data(n, d)` creates a synthetic regression dataset using the below model.
+
 $$
 y = X w_{\text{true}} + \text{noise}
 $$
+
 where:
 - \(n\) = number of data points  
 - \(d\) = number of features  
 
-2. **Loss Function**
+2. **Loss Function**\
 The objective function `f(w, X, y)` we aim to minimize is the Mean Squared Error (MSE), defined as:
+
 $$
 f(w) = \frac{1}{n}\sum_{i=1}^{n} \left(y_i - X_i w\right)^2
 $$
